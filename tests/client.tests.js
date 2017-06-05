@@ -33,7 +33,7 @@ test.todo('App contains a loading logo element')
 
 test.todo('App loads footer')
 
-test.todo('App loads seeds')
+test.todo('App loads db')
 
 test.todo('App contains an input button')
 
@@ -44,10 +44,6 @@ test.todo('App allows form to render placeholder text')
 test.todo('App shows gallery view')
 
 test.todo('App shows one clothing title on select view')
-
-/*test.todo('???')
-
-test.todo('???')
 
 
 test.cb('get Data connecting to server', t => {
