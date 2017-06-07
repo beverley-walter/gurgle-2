@@ -1,14 +1,17 @@
 var express = require('express')
 var router = express.Router()
 
-var clothingBrandsDb = require('../db/clothingBrands')
+var getcatalogueDb = require('../db/catalogue')
 
 router.get('/', (req, res) => {
   let db = req.app.get('db')
-  clothingBrandsDb.getClothingBrands(db)
-    .then(clothingDetails => {
-      res.json(clothingDetails)
+  getcatalogueDb.getcatalogue(db)
+    .then(catalogue => {
+      res.json(catalogue)
     })
 })
 
 module.exports = router
+
+
+//search option

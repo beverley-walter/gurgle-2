@@ -5,7 +5,7 @@
   "repository": "https://github.com/dev-academy-challenges/boilerplate-react-webpack.git",
   "main": "server/index.js",
   "scripts": {
-    "dev": "nodemon --watch server server/index & webpack --watch",
+    "bev": "nodemon --watch server server/index & webpack --watch",
     "start": "node server/index",
     "test": "ava  -v 'test/**/*.test.js'",
     "watch": "nodemon -e js,jsx -x npm test",
@@ -41,6 +41,7 @@
     "nodemon": "^1.11.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-router-dom": "^4.1.1",
     "react-test-renderer": "^15.5.4",
     "sqlite3": "^3.1.8",
     "supertest": "^3.0.0",

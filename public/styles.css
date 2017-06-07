@@ -69,12 +69,12 @@
 
 .container h1{
    font-family: 'Montserrat', sans-serif;
-   color: #4285F4;
+   color: rgba (35,35,35,1);
 }
 
 .container h2, .container h3, p, th, td, li{
    font-family: 'Montserrat',sans-serif;
-   color: #21437A;
+   color: rgba (35,35,35,1);
    t
 }
 
@@ -88,8 +88,8 @@ img{
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea, select {
   height: 38px;
   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
-  background-color: #fff;
-  border: 1px solid #D1D1D1;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(255, 255, 255, 0);
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box;
@@ -114,7 +114,7 @@ textarea {
 }
 
 input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus, textarea:focus, select:focus {
-  border: 1px solid #33C3F0;
+  border: 1px solid rgba(0,204,204,1);
   outline: 0;
 }
 
@@ -123,7 +123,7 @@ label, legend {
   margin-bottom: .5rem;
   font-weight: 600;
   font-family: 'Montserrat',sans-serif;
-  color: #21437A;
+  color: rgba (35,35,35,1);
 }
 
 
@@ -136,7 +136,7 @@ label > .label-body {
   margin-left: .5rem;
   font-weight: normal;
   font-family: 'Montserrat',sans-serif;
-  color: #21437A;
+  color: rgba (35,35,35,1);
 }
 
 
@@ -169,7 +169,7 @@ li {
 th, td {
   padding: 12px 15px;
   text-align: left;
-  border-bottom: 1px solid #21437A;
+  border-bottom: 1px solid rgba (35,35,35,1);
 }
 
 th:first-child, td:first-child {
@@ -187,7 +187,7 @@ input[type="submit"], input[type="reset"], input[type="button"], .button {
     height: 38px;
     padding: 0 30px;
     font-family: 'Montserrat',sans-serif;
-    color: #21437A;
+    color: rgba (35,35,35,1);
     text-align: center;
     font-size: 11px;
     font-weight: 600;
@@ -197,7 +197,7 @@ input[type="submit"], input[type="reset"], input[type="button"], .button {
     text-decoration: none;
     background-color: transparent;
     border-radius: 4px;
-    border: 1px solid #bbb;
+    border: 1px solid rgba (187,187,187, 0);
     cursor: pointer;
     box-sizing: border-box;
 }

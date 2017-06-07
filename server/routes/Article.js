@@ -1,16 +1,17 @@
 var express = require('express')
 var router = express.Router()
 
-var membersListDb = require('../db/membersList')
+var articleDb = require('../db/article')
 
 router.get('/', (req, res) => {
   let db = req.app.get('db')
-  membersListDb.getMembersList(db)
-    .then(membersList => {
-      res.json(membersList)
+  articleDb.getarticle(db)
+    .then(article => {
+      res.json(article)
     })
 })
 
 module.exports = router
 
-//admin view only. 
+
+// single item clothing view

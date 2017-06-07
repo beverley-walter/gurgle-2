@@ -1,9 +1,11 @@
 exports.seed = function(knex, Promise) {
   // Deletes ALL existing entries
-  return knex('clothingStatus').del()
+  return knex('clothing_status').del()
     .then(function () {
-      return knex('clothingStatus').insert([
-        {clothingSizes: 'On Loan', sizeID: '1' },
+      return knex('clothing_status').insert([
+         {size_id: '1', clothing_status: 'In'},
+         {size_id: '2', clothing_status: 'Out'},
+         {size_id: '3', clothing_status: 'Admin'}
       ]);
     });
 };

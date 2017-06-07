@@ -12,3 +12,6 @@ router.get('/', (req, res) => {
 })
 
 module.exports = router
+
+
+//part of member profile view and admin view

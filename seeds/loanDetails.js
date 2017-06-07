@@ -1,10 +1,19 @@
 
 exports.seed = function(knex, Promise) {
   // Deletes ALL existing entries
-  return knex('loanDetails').del()
+  return knex('loan_details').del()
     .then(function () {
-      return knex('loanDetails').insert([
-        {loanID: '101', memberID: '234 567', clothingID: 'babyg_1', bookingStatus: 'OUT', returnByDate: '01/09/2017', actualReturnDate: '01/08/2017'},
+      return knex('loan_details').insert([
+        {loan_id: '101',
+        member_id: '123-456',
+        clothing_id: 'babyg_1',
+        status_id: '1',
+        booked_date: '01',
+        booked_month: '07',
+        booked_year: '2017',
+        return_by_date: '01',
+        return_by_month: '09',
+        return_by_year: '2017'}
       ]);
     });
 };
